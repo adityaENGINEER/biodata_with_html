@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upadhyayweb</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Upadhyay | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: radial-gradient(circle at top left, #1f1c2c, #928DAB);
+      color: white;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      margin-top: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: slideIn 2s ease-in-out;
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+      text-shadow: 0 0 5px #fff;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid white;
+      box-shadow: 0 0 20px #3300ff;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      position: relative;
+      animation: popIn 1s ease forwards;
+      opacity: 0;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #FFD700;
+      text-shadow: 0 0 8px #FFD700;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .contact {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    a {
+      color: #00ff84;
+      text-decoration: none;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .glow {
+      animation: glowEffect 2s infinite alternate;
+    }
+    @keyframes glowEffect {
+      from {
+        box-shadow: 0 0 10px #0088ff, 0 0 20px #8aaa61;
+      }
+      to {
+        box-shadow: 0 0 20px #FFEA00, 0 0 30px #00ff44;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aditya Upadhyay</h1>
+    <p><i><b>BTech CSE (AI) | Python, C & HTML Programmer</b></i></p>
+  </header>
+
+  <img src="https://lh3.googleusercontent.com/a/ACg8ocKXjxSO4y5as0W2-KR_yx8bi0A_7pc7Pd_SHRfRtQhgJO2Ma6os=s360-c-no" alt="Aditya Photo" class="profile-img">
+
+  <section class="box glow" id="about">
+    <h2>About Me</h2>
+    <p> <ul> I completed my schooling (10th & 12th) in Science stream from Jawahar Navodaya Vidyalaya, Agra. <br> Currently pursuing BTech in Computer Science (Artificial Intelligence) from IIMT College of Engineering, Greater Noida.</ul></p>
+  </section>
+
+  <section class="box glow" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python (since 12th)</li>
+      <li>C Language</li>
+      <li>HTML</li>
+    </ul>
+  </section>
+
+  <section class="box glow" id="contact">
+    <h2>Contact</h2>
+    <p class="contact">
+      Phone: 8630594796<br>
+      Email: <a href="adityaupadhya909@gmail.com">adityaupadhya909@gmail.com </a><br>
+      Instagram: <a href="https://www.instagram.com/upadhyayjoys/profilecard/?igsh=MWR4YTAwYTB1bWpiMw==" target="_blank">@upadhyayjoys</a><br>
+      facebook: <a href="https://www.facebook.com/share/1A43uz9fzd/">facebook</a>
+    </p>
+  </section>
+
+  <script>
+    document.querySelectorAll('.box').forEach((box, i) => {
+      setTimeout(() => {
+        box.style.opacity = '1';
+      }, i * 500 + 500);
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
